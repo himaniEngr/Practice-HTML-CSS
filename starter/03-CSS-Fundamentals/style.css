@@ -1,4 +1,4 @@
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -6,7 +6,16 @@ p,
 li {
   font-family: sans-serif;
   color: #444;
+} */
+body {
+  font-family: sans-serif;
+  color: #444;
+  border-top: 10px solid #1098ad;
 }
+/* body {
+  color: red;
+} */
+
 h1,
 h2,
 h3 {
@@ -62,6 +71,7 @@ li {
 
 .main-header {
   background-color: #f7f7f7;
+  padding: 20px;
 }
 
 aside {
@@ -103,3 +113,16 @@ a:hover {
 a:active {
   background-color: black;
 }
+
+/* footer p {
+  color: red;
+}
+#copyright {
+  color: blue;
+}
+.copyright {
+  color: yellow;
+}
+.text {
+  color: green !important;
+} */
