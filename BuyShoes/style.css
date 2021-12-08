@@ -5,11 +5,13 @@
 body {
   font-family: sans-serif;
   line-height: 1.4;
+  /* position: relative; */
 }
 .product {
   border: 4px solid #444;
   width: 825px;
   margin: 50px auto;
+  position: relative;
 }
 .product-name {
   font-size: 22px;
@@ -67,4 +69,49 @@ body {
 .add-to-cart:active {
   color: black;
   background-color: white;
+}
+
+.sale {
+  position: absolute;
+  top: -15px;
+  left: -35px;
+  color: white;
+  background-color: red;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.color1,
+.color2,
+.color3,
+.color4,
+.color5,
+.color6 {
+  padding: 10px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.color1 {
+  background-color: black;
+}
+.color2 {
+  background-color: blue;
+}
+.color3 {
+  background-color: red;
+}
+.color4 {
+  background-color: yellow;
+}
+.color5 {
+  background-color: green;
+}
+.color6 {
+  background-color: brown;
+}
+.colors {
+  margin-top: 40px;
+  margin-bottom: 15px;
 }
