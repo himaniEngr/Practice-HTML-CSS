@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   font-family: sans-serif;
@@ -22,6 +23,8 @@ body {
 }
 .price {
   font-size: 24px;
+  margin-top: 10px;
+  float: left;
 }
 .shipping {
   font-size: 12px;
@@ -29,6 +32,8 @@ body {
   color: #777;
   font-weight: bold;
   margin-bottom: 20px;
+  float: right;
+  margin-top: 20px;
 }
 .more-info:link,
 .more-info:visited {
@@ -45,7 +50,7 @@ body {
   text-transform: uppercase;
   font-size: 16px;
   margin-bottom: 15px;
-  margin-top: 30px;
+  margin-top: 12px;
 }
 .add-to-cart {
   color: white;
@@ -116,4 +121,34 @@ body {
 .colors {
   margin-top: 40px;
   margin-bottom: 15px;
+}
+.div1 {
+  /* background-color: red; */
+  float: left;
+  width: 240px;
+  height: 240px;
+  margin-right: 40px;
+}
+.div2 {
+  /* background-color: yellow; */
+  float: left;
+  width: 240px;
+  /* clear: both; */
+}
+.div3 {
+  /* background-color: brown; */
+  float: right;
+  width: 240px;
+}
+.clear {
+  clear: both;
+}
+.div4 {
+  clear: both;
+}
+.div4::after {
+  content: "";
+  top: 0;
+  left: 0;
+  clear: both;
 }
