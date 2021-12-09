@@ -2,6 +2,7 @@
   /* border-top: 10px solid #1098ad; */
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* PAGE SECTIONS */
@@ -14,7 +15,7 @@ body {
 }
 
 .container {
-  width: 800px;
+  width: 1200px;
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
@@ -29,7 +30,15 @@ body {
   margin-bottom: 60px;
   /* height: 80px; */
 }
-
+/* .clear {
+  clear: both;
+} */
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+  /* because by default, pseudi elements are inline */
+}
 nav {
   font-size: 18px;
   /* text-align: center; */
@@ -50,7 +59,7 @@ aside {
   border-bottom: 5px solid #1098ad;
   /* padding-top: 50px;
   padding-bottom: 50px; */
-  padding: 50px 0;
+  padding: 50px 40px;
   width: 500px;
 }
 
@@ -82,6 +91,7 @@ h4 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 p {
@@ -134,6 +144,7 @@ li:last-child {
 
 .related {
   list-style: none;
+  margin-left: 0;
 }
 
 body {
@@ -265,3 +276,35 @@ footer p {
 nav p {
   font-size: 18px;
 } */
+
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+.author {
+  /* padding-left: 80px; */
+  padding-top: 10px;
+  /* float: right; */
+  float: left;
+  margin-left: 20px;
+}
+h1 {
+  float: left;
+}
+nav {
+  float: right;
+}
+article {
+  /* background-color: green; */
+  width: 825px;
+  float: left;
+}
+aside {
+  /* background-color: red; */
+  width: 300px;
+  float: right;
+}
+footer {
+  /* background-color: yellow; */
+  clear: both;
+}
