@@ -36,10 +36,34 @@
         /* STARTER */
         font-family: sans-serif;
         background-color: #ddd;
-        font-size: 40px;
+        font-size: 32px;
         margin: 40px;
-
+        display: flex; /*all elememnts inside container get aligned horizontally*/
+        align-items: center; /*aligns children vertically -along main axiz*/
+        justify-content: flex-start; /*aligns items vertucally-along cross axis*/
+        /* gap: 30px; */
         /* FLEXBOX */
+      }
+      .el {
+        /* margin-right: 30px; */
+        /* DEFAULT */
+        /* flex-grow: 0; flexbox is not allowed to grow items
+        flex-shrink: 1; flexbox is allowed to shrink items
+        flex-basis: auto; */
+        /* flex-basis: 200px; */
+        flex-shrink: 0;
+        flex-grow: 1;
+      }
+      .el--1 {
+        align-self: flex-start;
+        /* order: 2; */
+      }
+      .el--5 {
+        align-self: stretch;
+        order: 1;
+      }
+      .el--6 {
+        order: -1;
       }
     </style>
   </head>
@@ -50,9 +74,9 @@
       <div class="el el--3">CSS</div>
       <div class="el el--4">are</div>
       <div class="el el--5">amazing</div>
-      <div class="el el--6">languages</div>
+      <!-- <div class="el el--6">languages</div>
       <div class="el el--7">to</div>
-      <div class="el el--8">learn</div>
+      <div class="el el--8">learn</div> -->
     </div>
   </body>
 </html>
