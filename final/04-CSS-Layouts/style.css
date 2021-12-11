@@ -351,6 +351,10 @@ footer {
   font-style: italic;
 }
 
+/* .post-header h2 {
+  margin-top: 0px;
+} */
+
 /* FLEXBOX LAYOUT */
 /* .row {
   display: flex;
@@ -372,7 +376,7 @@ aside {
   flex-basis: auto;
 
   flex: 0 0 300px;
-} */
+}
 
 /* CSS GRID LAYOUT */
 .container {
@@ -396,4 +400,5 @@ aside {
 
 footer {
   grid-column: 1 / -1;
+  background-color: #1098ad;
 }

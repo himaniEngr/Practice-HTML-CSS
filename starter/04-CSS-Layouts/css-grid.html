@@ -14,7 +14,11 @@
       }
       .el--3 {
         background-color: green;
-        height: 150px;
+        /* height: 150px; */
+        /* grid-column: 1/2;
+        grid-row: 1 / -1; */
+        align-self: end;
+        justify-self: end;
       }
       .el--4 {
         background-color: goldenrod;
@@ -31,6 +35,9 @@
       .el--8 {
         background-color: crimson;
       }
+      .el--9 {
+        background-color: red;
+      }
 
       .container--1 {
         /* STARTER */
@@ -39,6 +46,26 @@
         font-size: 40px;
         margin: 40px;
 
+        width: 700px;
+        height: 600px;
+        display: grid;
+        /* grid-template-columns: 1fr 1fr 1fr auto;  */
+        grid-template-columns: 125px 200px 125px;
+        /* grid-template-columns: repeat(4, 1fr); */
+        /* grid-template-rows: 300px 200px; */
+        grid-template-rows: 250px 100px;
+        /* height: 500px; */
+
+        /* gap: 30px; */
+        /* column-gap: 30px;
+        row-gap: 60px; */
+        gap: 50px;
+        justify-content: center;
+        align-content: center;
+
+        align-items: center;
+        justify-items: center;
+        /* justify-content: space-between; */
         /* CSS GRID */
       }
 
@@ -54,6 +81,9 @@
 
         /* CSS GRID */
       }
+      .container--2 {
+        display: none;
+      }
     </style>
   </head>
   <body>
@@ -66,6 +96,7 @@
       <div class="el el--6">(6) languages</div>
       <div class="el el--7">(7) to</div>
       <div class="el el--8">(8) learn</div>
+      <!-- <div class="el el--9">(9) test</div> -->
     </div>
 
     <div class="container--2">
@@ -75,6 +106,7 @@
       <div class="el el--5">(5)</div>
       <div class="el el--6">(6)</div>
       <div class="el el--7">(7)</div>
+      <!-- <div class="el el--8">(8)</div> -->
     </div>
   </body>
 </html>
