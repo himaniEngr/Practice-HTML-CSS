@@ -13,11 +13,12 @@ Default: 1
 
 --- 02 COLORS
 -Primary Color: #e67e22;
--Tints:
+-Tints: #fdf2e9
 -Shades:
 -Accents:
 -Greys:
 #555;
+#333;
 
 --- 05 SHADOWS
 
@@ -47,13 +48,51 @@ body {
   font-weight: 400;
   color: #555;
 }
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 9.6rem 0;
+}
 .hero {
   max-width: 130rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* background-color: blueviolet; */
+  align-items: center;
+  gap: 9.6rem;
+}
+.heading-primary {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
 }
 .hero-img {
   width: 100%;
+}
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  color: #fff;
+  background-color: #e67e22;
+}
+.btn--outline:link,
+.btn--outline:visited {
+  color: #555;
+  background-color: white;
 }
